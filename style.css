@@ -57,6 +57,10 @@ i{
     font-size: 18px;
 }
 
+#menu{
+    display: none;
+}
+
 .head a {
     padding: 0.5rem ;
     margin: 0;
@@ -72,7 +76,7 @@ i{
 }
 
 .titles .title {
-    padding: 3rem 0 0 10rem;
+    padding: 3rem 0 0 4.5rem;
     font-size: 20px;
     color: grey;
 }
@@ -137,8 +141,49 @@ i{
 .items-collection{
     display: grid;
     grid-template-columns: repeat(
-        auto-fill,
+        3,
         minmax(30rem, 1fr)
     );
     grid-gap: 1rem;
+}
+
+@media screen and (max-width:600px){
+    .head a {
+        display: none;
+    }
+
+    .head #menu{
+        display: block;
+    }
+    
+    .items-collection{
+        margin: 0 6px;
+    }
+
+    .titles .title {
+        padding-left: 3rem;
+    }
+
+    .items{
+        width: 15rem;
+        /* background-color: #db6400; */
+    }
+    
+    .item{
+        width: 15rem ;
+        /* background-color: #31326f; */
+    }
+    
+    .items .item img{
+        width: 15rem;
+    }
+
+    .items-collection{
+        display: grid;
+        grid-template-columns: repeat(
+            2,
+            minmax(10rem, 1fr)
+        );
+        grid-gap: 3rem;
+    }
 }
