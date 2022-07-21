@@ -99,3 +99,46 @@ i{
     color: var(--color-sec);
     text-decoration: underline;
 }
+
+.items{
+    width: 20rem;
+    /* background-color: #db6400; */
+
+}
+
+.item{
+    width: 20rem ;
+    /* background-color: #31326f; */
+}
+
+.items .item h2{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: grey
+}
+
+.items .item p{
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.items .item img{
+    width: 20rem;
+}
+
+.items .item .price span{
+    padding-right: 4px;
+    color: var(--color-primary);
+    text-decoration: line-through;
+}
+
+.items-collection{
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fill,
+        minmax(30rem, 1fr)
+    );
+    grid-gap: 1rem;
+}
