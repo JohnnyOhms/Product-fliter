@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100&display=swap');
+
+:root {
+    --white:#fff;
+    --black: #1c2b2d;
+    --blue: #31326f;
+    --light-blue: #005490;
+    --color-primary: #9d0919;
+    --color-sec: #db6400;
+    --color-grey: #ddd;
+    --color-dark-grey: #222831;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p{
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+
+.header{
+    height:50px;
+    display:flex;
+    justify-content: space-around;
+    padding: 2rem 4rem;
+    margin: 1rem 0;
+}
+
+i{
+    font-size: 15px;
+}
+
+.head a {
+    padding: 0.5rem 1.5rem 0.5rem 0;
+    margin: 0.5rem;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.titles {
+    background-color: var(--color-grey);
+    height: 90px;
+    margin: 0;
+}
+
+.titles .title {
+    padding: 3rem 0 0 10rem;
+    font-size: 20px;
+    color: grey;
+  
+}
