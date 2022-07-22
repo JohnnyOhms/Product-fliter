@@ -45,6 +45,7 @@ p{
     justify-content:space-between;
     padding: 2rem 4rem;
     margin: 1rem 0;
+    position: relative;
 }
 
 .header h1{
@@ -59,6 +60,22 @@ i{
 
 #menu{
     display: none;
+}
+
+.menu-bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30rem;
+    width: 10rem;
+    background-color: var(--white);
+    /* position: relative; */
+}
+
+.exist{
+    position: absolute;
+    top:5px;
+    right: 5px;
 }
 
 .head a {
@@ -107,7 +124,17 @@ i{
 .items{
     width: 20rem;
     /* background-color: #db6400; */
+    transition: all .5s ease;
+    animation: slide-up ease .8s;
 
+}
+
+@keyframes slide-up {
+    from{
+        transform: translateY(30rem);
+    }to{
+        transform: translateY(0);
+    }
 }
 
 .item{
