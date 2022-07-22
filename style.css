@@ -45,7 +45,6 @@ p{
     justify-content:space-between;
     padding: 2rem 4rem;
     margin: 1rem 0;
-    position: relative;
 }
 
 .header h1{
@@ -62,21 +61,9 @@ i{
     display: none;
 }
 
-.menu-bar{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 30rem;
-    width: 10rem;
-    background-color: var(--white);
-    /* position: relative; */
-}
-
-.exist{
-    position: absolute;
-    top:5px;
-    right: 5px;
-}
+/* .menu-bar{
+    display: none;
+} */
 
 .head a {
     padding: 0.5rem ;
@@ -181,6 +168,26 @@ i{
 
     .head #menu{
         display: block;
+    }
+
+    .menu-bar{
+        height: 5rem;
+        width: 100%;
+        transition: all .5s ease;
+        animation: slide-down ease .8s;
+    }
+    
+    @keyframes slide-down {
+        from{
+            transform: translateY(1);
+        }to{
+            transform: translateY(-121);
+        }
+    }
+    .menu-bar .bars a {
+        padding: 4rem;
+        text-decoration: none;
+        font-size: 13px;
     }
     
     .items-collection{

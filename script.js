@@ -1,5 +1,7 @@
+const itemCollection = document.querySelector(".items-collection")
 const selectProduct = document.querySelectorAll('.select-product')
 const product = document.querySelectorAll(".items")
+
 
 selectProduct.forEach((btn)=>{
     btn.addEventListener('click', (e)=>{
