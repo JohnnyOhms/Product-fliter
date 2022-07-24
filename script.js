@@ -6,6 +6,7 @@ const productName = document.querySelectorAll(".items .item h2")
 const menu = document.getElementById("menu")
 const menu_bar = document.querySelector(".menu-bar")
 let exist_menu =  document.getElementById("exist")
+const alert_box = document.querySelector(".alert-box")
 
 selectProduct.forEach((btn)=>{
     btn.addEventListener('click', (e)=>{
@@ -36,8 +37,10 @@ searchInput.addEventListener("keyup", (e)=>{
        let names = name.textContent.toLowerCase()
         if (text.indexOf(names) != -1) {
             name.parentElement.parentElement.style.display = "block";
+            alert_box.style.display = "none"
         }else{
             name.parentElement.parentElement.style.display = "none";
+            alert_box.style.display = "block"
         }
     })
 })
@@ -51,7 +54,7 @@ function showMenu(e){
     menu.style.display = 'none'
     exist_menu.style.display = 'block'
     menu_bar.style.display = "block"
-    menu.removeEventListener(showMenu)
+    // menu.removeEventListener(showMenu)
 }
 
 exist_menu.addEventListener("click", closeMenu)
@@ -61,7 +64,7 @@ function closeMenu(e){
     exist_menu.style.display = 'none'
     menu.style.display = 'block'
     menu_bar.style.display = "none"
-    menu.addEventListener("click", showMenu)
+    // menu.addEventListener("click", showMenu)
     
 
 }

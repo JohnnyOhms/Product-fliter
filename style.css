@@ -114,7 +114,6 @@ i{
 
 .items{
     width: 20rem;
-    /* background-color: #db6400; */
     transition: all .5s ease;
     animation: slide-up ease .8s;
 
@@ -130,7 +129,6 @@ i{
 
 .item{
     width: 20rem ;
-    /* background-color: #31326f; */
 }
 
 .items .item h2{
@@ -163,6 +161,10 @@ i{
         minmax(30rem, 1fr)
     );
     grid-gap: 1rem;
+}
+
+.alert-box{
+    display: none;
 }
 
 @media screen and (max-width:600px){

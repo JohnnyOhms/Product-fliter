@@ -1,0 +1,28 @@
+.content-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem auto;
+}
+
+.button{
+    margin: 30px;
+    padding: 10px;
+}
+
+section{
+    width: 70rem;
+}
+
+.collection{
+    width: 70rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.collection .thumbnail .item img{
+    width: 20rem;
+}
