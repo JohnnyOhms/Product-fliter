@@ -16,6 +16,7 @@ section{
 
 .collection{
     width: 70rem;
+    height: 37rem;
     margin: 0 auto;
     display: flex;
     justify-content: flex-start;
@@ -23,6 +24,69 @@ section{
     overflow-x: auto;
 }
 
+/* .collection::-webkit-scrollbar{
+    color: orangered;
+    height: 5px;
+    width: 2px;
+} */
+
+/* section::-webkit-scrollbar-track{
+    background-color: blue;
+    outline: 1px solid white;
+} */
+
 .collection .thumbnail .item img{
     width: 20rem;
+}
+
+.thumbnail{
+    flex: 0 0 auto;
+    border: 2px solid rgb(237, 225, 225);
+    margin: 5px;
+    overflow: hidden;
+    transform: scale(.9s);
+    transition: all .3s;
+}
+
+.thumbnail:hover{
+    transform: scale(1.1);
+}
+
+.thumbnail .item h2{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: grey
+}
+
+.thumbnail .item p{
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.thumbnail .item .price span{
+    padding-right: 4px;
+    color: var(--color-primary);
+    text-decoration: line-through;
+}
+
+.arrow{
+    font-size: 30px;
+    cursor: pointer;
+    color: #db6400;
+}
+
+@media screen and (max-width:600px){
+    section{
+        width: 40rem;
+    }
+    .collection{
+        width: 35rem;
+        margin: 0 auto;
+    }
+    .button{
+        margin: 2px;
+        padding:0 ;
+    }
 }
